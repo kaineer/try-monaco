@@ -1,0 +1,30 @@
+{
+  "name": "try-monaco",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "default": "gulp",
+    "copy:style": "npm run copy:bulma && cp src/style.css public/css/",
+    "copy:bulma": "mkdir -p public/css && cp node_modules/bulma/css/bulma.min.css public/css/bulma.css",
+    "build": "webpack && cp src/index.html public/index.html && npm run copy:style",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "acorn": "6.1.1",
+    "monaco-editor": "0.15.6",
+    "vm": "0.1.0"
+  },
+  "devDependencies": {
+    "bulma": "0.7.4",
+    "css-loader": "2.1.0",
+    "gulp": "4.0.0",
+    "monaco-editor-webpack-plugin": "1.7.0",
+    "style-loader": "0.23.1",
+    "webpack": "4.29.5",
+    "webpack-cli": "3.2.3"
+  }
+}
