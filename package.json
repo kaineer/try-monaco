@@ -14,7 +14,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "acorn": "6.1.1",
+    "acorn": "6.4.1",
     "monaco-editor": "0.15.6",
     "vm": "0.1.0"
   },
